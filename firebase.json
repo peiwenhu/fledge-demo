@@ -88,7 +88,7 @@
   ],
   "emulators": {
     "functions": {
-      "port": "5080",
+      "port": "5080"
     },
     "hosting": {
       "host": "0.0.0.0",
