@@ -7,7 +7,7 @@
     "lint": "npx prettier --write .",
     "shell": "firebase functions:shell",
     "logs": "firebase functions:log",
-    "postinstall": "cd functions && npm install && cd ..",
+    "postinstall": "cd functions && npm install && cd .."
   },
   "author": "",
   "license": "ISC",
