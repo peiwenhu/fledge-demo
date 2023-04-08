@@ -2,7 +2,7 @@
   "name": "fledge-demo",
   "version": "1.0.0",
   "scripts": {
-    "dev": "firebase emulators:start",
+    "dev": "firebase emulators:start --debug",
     "deploy": "firebase deploy",
     "lint": "npx prettier --write .",
     "shell": "firebase functions:shell",
