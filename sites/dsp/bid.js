@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 function generateBid(interestGroup, auctionSignals, perBuyerSignals, trustedBiddingSignals, browserSignals) {
+  console.log("In generateBid: trustedBiddingSignals: ", trustedBiddingSignals);
   const [testAd] = interestGroup.ads;
 
   return {

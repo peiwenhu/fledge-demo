@@ -17,10 +17,13 @@
 const ONE_WEEK_IN_SECONDS = 60 * 60 * 24 * 7;
 
 const joinInterestGroup = async (dspUrl) => {
+  console.log("joinInterestGroup called with ", dspUrl);
   const interestGroup = {
     owner: `${dspUrl}`,
     name: 'tv',
     biddingLogicUrl: `${dspUrl}/bid.js`,
+    trustedBiddingSignalsUrl: `v1/getvalues`,
+    trustedBiddingSignalsKeys: ["hi"],
     ads: [
       {
         renderUrl: `${dspUrl}/ads/default-ad.html`,
