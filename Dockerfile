@@ -39,9 +39,7 @@ CMD ["./dockerentrypoint"]
 # docker build  -t fledge-demo .
 # interactive:
 # docker stop demo;docker rm demo;docker run -it --volume "/tmp/certs":"/demo/certs" -p 8080:8080 -p 8085:8085 -p 8086:8086 -p 8087:8087 -p 8088:8088 -p 4437:4437 -p 4438:4438 --name demo fledge-demo
-# then run
-# nginx
-# npm run dev
+#
 #
 # below doesn't work yet
 # standard run:

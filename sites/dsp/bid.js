@@ -17,13 +17,22 @@ function generateBid(interestGroup, auctionSignals, perBuyerSignals, trustedBidd
   console.log("In generateBid: trustedBiddingSignals: ", trustedBiddingSignals);
   const [testAd] = interestGroup.ads;
 
-  return {
-    bid: 1, // Arbitrary bid value
+  var budget = 1;
+  if ("budget" in trustedBiddingSignals) {
+    console.log("trustedBiddingSignals returned budget ", trustedBiddingSignals["budget"], ". Using that as bid.");
+    budget = Number(trustedBiddingSignals["budget"]);
+  }else {
+    console.log("Using default bid: 1");
+  }
+  var bidOutput = {
+    bid: budget,
     ad: {
       adName: testAd.metadata.adName,
     },
     render: testAd.renderUrl,
   };
+  console.log("In generateBid: final output: ", bidOutput);
+  return bidOutput;
 }
 
 function reportWin() {
