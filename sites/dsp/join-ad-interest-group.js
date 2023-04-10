@@ -23,7 +23,7 @@ const joinInterestGroup = async (dspUrl) => {
     name: 'tv',
     biddingLogicUrl: `${dspUrl}/bid.js`,
     trustedBiddingSignalsUrl: `v1/getvalues`,
-    trustedBiddingSignalsKeys: ["hi"],
+    trustedBiddingSignalsKeys: ["hi", "budget"],
     ads: [
       {
         renderUrl: `${dspUrl}/ads/default-ad.html`,
